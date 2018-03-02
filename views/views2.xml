@@ -1,0 +1,15 @@
+<openerp>
+  <data>
+     <record id="view_accountpay_form_inherit" model="ir.ui.view">
+            <field name="name">view.accountpay.form.add.text.field</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account.view_account_payment_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//field[@name='communication']" position="after">
+                     <field name="type_change"/>
+                </xpath>
+            </field>
+    </record>
+
+  </data>
+</openerp>
